@@ -34,6 +34,9 @@
         .btn-1 { background-color: #ffffff; color: #4A3728; border-top: 1px solid #eee; }
         .btn-2 { background: linear-gradient(135deg, #4A3728 0%, #2D1F16 100%); color: #ffffff; }
         .divider { width: 40px; height: 2px; background-color: #D4AF37; margin: 20px auto; }
+        
+        /* 한글 줄바꿈 최적화 */
+        .break-keep { word-break: keep-all; }
     </style>
 </head>
 <body class="pb-32">
@@ -47,15 +50,15 @@
         </div>
     </header>
 
-    <!-- 1. Hero Section (Mobile Optimized) -->
+    <!-- 1. Hero Section -->
     <section class="relative min-h-screen flex items-center justify-center bg-cream overflow-hidden pt-32 pb-20 md:pt-0 md:pb-0">
         <div class="container mx-auto px-6 text-center z-10" data-aos="fade-up">
-            <p class="text-premium-gold font-bold tracking-widest mb-4 text-xs md:text-base">PREMIUM ENZYME ROUTINE</p>
-            <h1 class="text-3xl md:text-7xl font-black text-premium-brown leading-tight mb-8">
-                잘 먹는 것보다<br><span class="text-premium-gold">잘 소화하는 것이</span><br>진정한 실력입니다
+            <p class="text-premium-gold font-bold tracking-widest mb-4 text-[10px] md:text-base uppercase">Premium Enzyme Routine</p>
+            <h1 class="text-xl md:text-7xl font-black text-premium-brown leading-tight mb-8 break-keep">
+                잘 먹는 것보다<br><span class="text-premium-gold md:text-7xl">잘 소화하는 것이</span><br>진정한 실력입니다
             </h1>
             <div class="divider"></div>
-            <p class="text-base md:text-lg text-gray-600 max-w-xl mx-auto mb-10 px-4">
+            <p class="text-sm md:text-lg text-gray-600 max-w-xl mx-auto mb-10 px-4 break-keep">
                 19년 연구의 결정체, 지쿱 디엘릭서 브라운 효소.<br>당신의 대사 스위치를 다시 켭니다.
             </p>
             <img src="images/ai-product-Style-B-1766769155762.jpg" alt="Hero" class="mx-auto rounded-3xl shadow-2xl max-w-md w-full">
@@ -65,24 +68,24 @@
     <!-- 2. Science: Aging -->
     <section class="py-24 bg-white">
         <div class="container mx-auto px-6 text-center" data-aos="fade-up">
-            <h2 class="text-3xl font-black text-premium-brown mb-6">나이가 들수록 소화가 안 되는 진짜 이유</h2>
-            <p class="text-gray-500 mb-12">체내 소화 효소 보유량은 20대 대비 70대에서 약 30배 이상 급격히 감소합니다.</p>
-            <div class="max-w-4xl mx-auto bg-gray-50 p-10 rounded-3xl border border-gray-100">
-                <div class="flex justify-around items-end h-64 space-x-4">
+            <h2 class="text-xl md:text-3xl font-black text-premium-brown mb-6 break-keep">나이가 들수록 소화가 안 되는 진짜 이유</h2>
+            <p class="text-sm md:text-base text-gray-500 mb-12 break-keep px-4">체내 소화 효소 보유량은 20대 대비 70대에서 약 30배 이상 급격히 감소합니다.</p>
+            <div class="max-w-4xl mx-auto bg-gray-50 p-6 md:p-10 rounded-3xl border border-gray-100">
+                <div class="flex justify-around items-end h-48 md:h-64 space-x-4">
                     <div class="flex flex-col items-center w-full">
-                        <div class="w-full bg-premium-brown h-60 rounded-t-lg opacity-100"></div>
-                        <p class="mt-4 font-bold">20대</p>
+                        <div class="w-full bg-premium-brown h-40 md:h-60 rounded-t-lg opacity-100"></div>
+                        <p class="mt-4 text-xs md:text-base font-bold">20대</p>
                     </div>
                     <div class="flex flex-col items-center w-full">
-                        <div class="w-full bg-premium-brown h-40 rounded-t-lg opacity-60"></div>
-                        <p class="mt-4 font-bold">40대</p>
+                        <div class="w-full bg-premium-brown h-24 md:h-40 rounded-t-lg opacity-60"></div>
+                        <p class="mt-4 text-xs md:text-base font-bold">40대</p>
                     </div>
                     <div class="flex flex-col items-center w-full">
-                        <div class="w-full bg-premium-brown h-10 rounded-t-lg opacity-20"></div>
-                        <p class="mt-4 font-bold">70대</p>
+                        <div class="w-full bg-premium-brown h-8 md:h-10 rounded-t-lg opacity-20"></div>
+                        <p class="mt-4 text-xs md:text-base font-bold">70대</p>
                     </div>
                 </div>
-                <p class="mt-10 text-sm text-red-500 font-bold">*출처: 효소영양학개론 (2003)</p>
+                <p class="mt-8 text-[10px] md:text-sm text-red-500 font-bold">*출처: 효소영양학개론 (2003)</p>
             </div>
         </div>
     </section>
@@ -91,14 +94,14 @@
     <section class="py-24 bg-premium-brown text-white overflow-hidden">
         <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
             <div class="md:w-1/2 mb-12 md:mb-0" data-aos="fade-right">
-                <h3 class="text-premium-gold text-lg font-bold mb-4">에드워드 하웰의 잠재효소 이론</h3>
-                <h2 class="text-4xl font-black mb-8 leading-tight">효소를 아껴야<br>건강하게 오래 삽니다</h2>
-                <p class="text-gray-300 leading-relaxed mb-6">
+                <h3 class="text-premium-gold text-sm md:text-lg font-bold mb-4">에드워드 하웰의 잠재효소 이론</h3>
+                <h2 class="text-3xl md:text-4xl font-black mb-8 leading-tight break-keep">효소를 아껴야<br>건강하게 오래 삽니다</h2>
+                <p class="text-sm md:text-lg text-gray-300 leading-relaxed mb-6 break-keep">
                     평생 몸에서 만들어지는 효소의 양은 한정적입니다. <br>
                     <strong>소화에만 효소를 다 써버리면</strong> 세포 복구, 해독, 면역을 위한 '대사 효소'가 부족해집니다.
                 </p>
                 <div class="bg-white/10 p-6 rounded-2xl border border-white/20">
-                    <p class="text-sm font-medium">✔️ 소화 효소를 외부에서 채워주면, 내 몸의 효소는 '대사 작용'에만 집중할 수 있습니다.</p>
+                    <p class="text-xs md:text-sm font-medium">✔️ 소화 효소를 외부에서 채워주면, 내 몸의 효소는 '대사 작용'에만 집중할 수 있습니다.</p>
                 </div>
             </div>
             <div class="md:w-1/2 md:pl-16" data-aos="fade-left">
@@ -110,17 +113,17 @@
     <!-- 4. Solution: Why Before Meal -->
     <section class="py-24 bg-cream">
         <div class="container mx-auto px-6 text-center" data-aos="fade-up">
-            <h2 class="text-3xl font-black text-premium-brown mb-12">왜 '식전 5분'인가요?</h2>
+            <h2 class="text-2xl md:text-3xl font-black text-premium-brown mb-12">왜 '식전 5분'인가요?</h2>
             <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
                 <div class="bg-white p-10 rounded-3xl text-left shadow-xl shadow-brown-900/10">
                     <span class="text-premium-gold font-black text-4xl mb-6 block">01</span>
                     <h4 class="text-xl font-bold mb-4">준비된 위장</h4>
-                    <p class="text-gray-600">음식이 들어오기 전 미리 효소를 활성화시켜 위장의 부담을 즉각적으로 낮춥니다.</p>
+                    <p class="text-sm md:text-base text-gray-600 break-keep">음식이 들어오기 전 미리 효소를 활성화시켜 위장의 부담을 즉각적으로 낮춥니다.</p>
                 </div>
                 <div class="bg-white p-10 rounded-3xl text-left shadow-xl shadow-brown-900/10">
                     <span class="text-premium-gold font-black text-4xl mb-6 block">02</span>
                     <h4 class="text-xl font-bold mb-4">대사 스위치 ON</h4>
-                    <p class="text-gray-600">음식물 체류 시간을 단축시켜 에너지 흡수 효율을 극대화합니다.</p>
+                    <p class="text-sm md:text-base text-gray-600 break-keep">음식물 체류 시간을 단축시켜 에너지 흡수 효율을 극대화합니다.</p>
                 </div>
             </div>
         </div>
@@ -129,12 +132,12 @@
     <!-- 5. Tech: Potency -->
     <section class="py-24 bg-white">
         <div class="container mx-auto px-6 text-center" data-aos="fade-up">
-            <h2 class="text-4xl font-black text-premium-brown mb-8">단 한 포에 담긴 3,000,000 Unit</h2>
-            <p class="text-xl text-gray-500 mb-12 font-medium">정제 효소 없이, 자연 발효만으로 일궈낸 경이로운 활성도</p>
-            <div class="relative max-w-2xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-black text-premium-brown mb-8 break-keep">단 한 포에 담긴 3,000,000 Unit</h2>
+            <p class="text-base md:text-xl text-gray-500 mb-12 font-medium break-keep px-4">정제 효소 없이, 자연 발효만으로 일궈낸 경이로운 활성도</p>
+            <div class="relative max-w-2xl mx-auto px-4">
                 <img src="images/ai-product-Style-B-1766769725641.jpg" alt="Potency" class="rounded-3xl shadow-2xl">
-                <div class="absolute -bottom-6 -right-6 bg-premium-gold text-white p-8 rounded-full font-black text-2xl animate-bounce">
-                    300만<br><span class="text-sm">실제검사결과</span>
+                <div class="absolute -bottom-4 -right-2 md:-bottom-6 md:-right-6 bg-premium-gold text-white p-4 md:p-8 rounded-full font-black text-sm md:text-2xl animate-bounce">
+                    300만<br><span class="text-[8px] md:text-sm">실제검사결과</span>
                 </div>
             </div>
         </div>
@@ -145,30 +148,29 @@
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row items-center justify-between">
                 <div class="md:w-1/2 mb-12 md:mb-0" data-aos="fade-right">
-                    <!-- 업로드한 실험 영상 삽입 -->
                     <video src="images/브라운효소영상.mp4" class="w-full rounded-2xl shadow-xl mb-10" controls muted loop playsinline poster="images/Ingredient Visual.jpg"></video>
                     
-                    <h2 class="text-3xl font-black text-premium-brown mb-8">지방까지 분해하는<br><span class="text-premium-gold">진짜 효소 '리파아제'</span></h2>
+                    <h2 class="text-2xl md:text-3xl font-black text-premium-brown mb-8 break-keep">지방까지 분해하는<br><span class="text-premium-gold">진짜 효소 '리파아제'</span></h2>
                     <ul class="space-y-6">
                         <li class="flex items-start space-x-4">
-                            <span class="bg-premium-brown text-white w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 font-bold">1</span>
+                            <span class="bg-premium-brown text-white w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 font-bold text-xs">1</span>
                             <div>
-                                <h4 class="font-bold">탄수화물 분해 (아밀라아제)</h4>
-                                <p class="text-sm text-gray-600">한국인 식단의 65%인 탄수화물을 완벽히 분해</p>
+                                <h4 class="font-bold text-sm md:text-base">탄수화물 분해 (아밀라아제)</h4>
+                                <p class="text-xs md:text-sm text-gray-600">한국인 식단의 65%인 탄수화물을 완벽히 분해</p>
                             </div>
                         </li>
                         <li class="flex items-start space-x-4">
-                            <span class="bg-premium-brown text-white w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 font-bold">2</span>
+                            <span class="bg-premium-brown text-white w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 font-bold text-xs">2</span>
                             <div>
-                                <h4 class="font-bold">단백질 분해 (프로테아제)</h4>
-                                <p class="text-sm text-gray-600">육류 섭취 후의 더부룩함 해소</p>
+                                <h4 class="font-bold text-sm md:text-base">단백질 분해 (프로테아제)</h4>
+                                <p class="text-xs md:text-sm text-gray-600">육류 섭취 후의 더부룩함 해소</p>
                             </div>
                         </li>
                         <li class="flex items-start space-x-4">
-                            <span class="bg-premium-brown text-white w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 font-bold">3</span>
+                            <span class="bg-premium-brown text-white w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 font-bold text-xs">3</span>
                             <div>
-                                <h4 class="font-bold">지방 분해 (리파아제) ★</h4>
-                                <p class="text-sm text-gray-600">기름진 음식도 가볍게 처리하는 핵심 요소</p>
+                                <h4 class="font-bold text-sm md:text-base">지방 분해 (리파아제) ★</h4>
+                                <p class="text-xs md:text-sm text-gray-600">기름진 음식도 가볍게 처리하는 핵심 요소</p>
                             </div>
                         </li>
                     </ul>
@@ -183,9 +185,9 @@
     <!-- 7. Tech: Pancreas -->
     <section class="py-24 bg-white text-center">
         <div class="container mx-auto px-6" data-aos="fade-up">
-            <h2 class="text-3xl font-black text-premium-brown mb-8">지친 당신의 '췌장'에 휴식을 선물하세요</h2>
-            <div class="max-w-3xl mx-auto bg-blue-50 p-10 rounded-3xl border border-blue-100">
-                <p class="text-blue-900 font-medium leading-relaxed">
+            <h2 class="text-xl md:text-3xl font-black text-premium-brown mb-8 break-keep px-2">지친 당신의 '췌장'에 휴식을 선물하세요</h2>
+            <div class="max-w-3xl mx-auto bg-blue-50 p-8 md:p-10 rounded-3xl border border-blue-100">
+                <p class="text-sm md:text-lg text-blue-900 font-medium leading-relaxed break-keep">
                     현대인의 췌장은 서구화된 식단과 과식으로 매일 비명을 지르고 있습니다.<br>
                     <strong>식전 효소 보충</strong>은 췌장이 스스로 효소를 짜내는 고통을 덜어주어,<br>
                     전신 건강의 핵심인 인슐린 대사와 면역 체계를 보호합니다.
@@ -197,16 +199,18 @@
     <!-- 8. Ingredients -->
     <section class="py-24 bg-cream">
         <div class="container mx-auto px-6 text-center" data-aos="fade-up">
-            <h2 class="text-3xl font-black text-premium-brown mb-12">자연 유래 성분의 프리미엄 블렌딩</h2>
+            <h2 class="text-xl md:text-3xl font-black text-premium-brown mb-12 break-keep">
+                자연 유래 성분의<br class="md:hidden"> 프리미엄 블렌딩
+            </h2>
             <img src="images/20260122_003328.jpg" alt="Ingredients" class="mx-auto rounded-3xl mb-12 max-w-4xl w-full shadow-lg">
-            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                <div class="bg-white p-8 rounded-2xl text-left border border-gray-100">
-                    <h4 class="text-premium-gold font-bold mb-4">BLOOD SUGAR CARE</h4>
-                    <p class="text-sm leading-relaxed text-gray-600">여주, 돼지감자, 바나바잎 배합으로 식후 당 변화에 민감하신 분들을 위해 설계되었습니다.</p>
+            <div class="grid md:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto">
+                <div class="bg-white p-6 md:p-8 rounded-2xl text-left border border-gray-100 shadow-sm">
+                    <h4 class="text-premium-gold font-bold mb-4 text-sm md:text-base">BLOOD SUGAR CARE</h4>
+                    <p class="text-xs md:text-sm leading-relaxed text-gray-600 break-keep">여주, 돼지감자, 바나바잎 배합으로 식후 당 변화에 민감하신 분들을 위해 설계되었습니다.</p>
                 </div>
-                <div class="bg-white p-8 rounded-2xl text-left border border-gray-100">
-                    <h4 class="text-premium-brown font-bold mb-4">TRADITIONAL DIGESTION</h4>
-                    <p class="text-sm leading-relaxed text-gray-600">매실, 진피, 감초 등 조상들의 지혜가 담긴 원료로 위 점막 보호와 소화 리듬을 관리합니다.</p>
+                <div class="bg-white p-6 md:p-8 rounded-2xl text-left border border-gray-100 shadow-sm">
+                    <h4 class="text-premium-brown font-bold mb-4 text-sm md:text-base">TRADITIONAL DIGESTION</h4>
+                    <p class="text-xs md:text-sm leading-relaxed text-gray-600 break-keep">매실, 진피, 감초 등 조상들의 지혜가 담긴 원료로 위 점막 보호와 소화 리듬을 관리합니다.</p>
                 </div>
             </div>
         </div>
@@ -215,19 +219,19 @@
     <!-- 9. Reviews -->
     <section class="py-24 bg-white overflow-hidden">
         <div class="container mx-auto px-6 text-center">
-            <h2 class="text-3xl font-black text-premium-brown mb-16" data-aos="fade-up">이미 많은 분들이 경험하고 계십니다</h2>
+            <h2 class="text-xl md:text-3xl font-black text-premium-brown mb-16 break-keep">이미 많은 분들이<br class="md:hidden"> 경험하고 계십니다</h2>
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="bg-gray-50 p-10 rounded-3xl border border-gray-100" data-aos="fade-up" data-aos-delay="100">
-                    <p class="text-gray-700 italic mb-8">"회식 가기 전 필수템입니다. 삼겹살 먹고 나서도 속이 이렇게 가벼울 수 있다니 놀라워요."</p>
-                    <p class="font-black text-premium-brown">- 40대 김OO님</p>
+                    <p class="text-sm md:text-base text-gray-700 italic mb-8 break-keep">"회식 가기 전 필수템입니다. 삼겹살 먹고 나서도 속이 이렇게 가벼울 수 있다니 놀라워요."</p>
+                    <p class="font-black text-premium-brown text-sm">- 40대 김OO님</p>
                 </div>
                 <div class="bg-gray-50 p-10 rounded-3xl border border-gray-100" data-aos="fade-up" data-aos-delay="200">
-                    <p class="text-gray-700 italic mb-8">"당뇨 전단계라 식단이 무서웠는데, 브라운 효소랑 같이 먹으니 한결 마음이 편합니다. 맛도 정말 고소해요."</p>
-                    <p class="font-black text-premium-brown">- 50대 이OO님</p>
+                    <p class="text-sm md:text-base text-gray-700 italic mb-8 break-keep">"당뇨 전단계라 식단이 무서웠는데, 브라운 효소랑 같이 먹으니 한결 마음이 편합니다. 맛도 정말 고소해요."</p>
+                    <p class="font-black text-premium-brown text-sm">- 50대 이OO님</p>
                 </div>
                 <div class="bg-gray-50 p-10 rounded-3xl border border-gray-100" data-aos="fade-up" data-aos-delay="300">
-                    <p class="text-gray-700 italic mb-8">"아침마다 붓기가 심했는데 소화가 잘 되니까 몸 전체가 가벼워지는 게 느껴져요. 인생 효소입니다!"</p>
-                    <p class="font-black text-premium-brown">- 30대 박OO님</p>
+                    <p class="text-sm md:text-base text-gray-700 italic mb-8 break-keep">"아침마다 붓기가 심했는데 소화가 잘 되니까 몸 전체가 가벼워지는 게 느껴져요. 인생 효소입니다!"</p>
+                    <p class="font-black text-premium-brown text-sm">- 30대 박OO님</p>
                 </div>
             </div>
         </div>
@@ -236,15 +240,17 @@
     <!-- 10. Trust & Info -->
     <section class="py-24 bg-gray-50">
         <div class="container mx-auto px-6">
-            <!-- Company Trust -->
+            <!-- Company Trust Section -->
             <div class='md:flex md:items-center md:space-x-12 mb-20' data-aos='fade-up'>
                 <div class='md:w-1/2 mb-10 md:mb-0'>
                     <img src='images/회사소개.jpg' alt='제너럴바이오' class='rounded-3xl shadow-2xl w-full'>
                 </div>
                 <div class='md:w-1/2 text-left'>
-                    <h3 class='text-3xl font-black text-gray-900 mb-6'>제너럴바이오(주)의 약속</h3>
-                    <p class='text-xl text-blue-900 font-extrabold mb-8'>19년의 제조 노하우, 글로벌 비콥 인증의 신뢰</p>
-                    <ul class='space-y-4 text-gray-700 leading-relaxed font-medium'>
+                    <h3 class='text-2xl md:text-3xl font-black text-gray-900 mb-6 break-keep'>제너럴바이오(주)의 약속</h3>
+                    <p class='text-lg md:text-xl text-blue-900 font-extrabold mb-8 break-keep'>
+                        19년의 제조 노하우,<br class="md:hidden"> 글로벌 비콥 인증의 신뢰
+                    </p>
+                    <ul class='space-y-4 text-xs md:text-base text-gray-700 leading-relaxed font-medium'>
                         <li>✅ 전 세계 10대 바이오테크 기업 선정 (APAC)</li>
                         <li>✅ GMP/ISO 인증의 철저한 위생 관리 시스템</li>
                         <li>✅ 전 성분 EWG 그린 등급 기준 추구</li>
@@ -256,13 +262,13 @@
             <!-- Info Tabs -->
             <div class="max-w-4xl mx-auto" data-aos="fade-up">
                 <div class="flex border-b border-gray-200 mb-8 overflow-hidden rounded-t-2xl">
-                    <button onclick="showTab('info')" id="btn-info" class="tab-btn flex-1 py-4 text-center font-bold text-gray-400 border-b-2 border-transparent transition-all">상품정보공시</button>
-                    <button onclick="showTab('qa')" id="btn-qa" class="tab-btn flex-1 py-4 text-center font-bold text-gray-400 border-b-2 border-transparent transition-all">Q&A</button>
-                    <button onclick="showTab('delivery')" id="btn-delivery" class="tab-btn flex-1 py-4 text-center font-bold text-gray-400 border-b-2 border-transparent transition-all">배송/환불</button>
+                    <button onclick="showTab('info')" id="btn-info" class="tab-btn flex-1 py-3 md:py-4 text-center text-xs md:text-base font-bold text-gray-400 border-b-2 border-transparent transition-all">상품정보공시</button>
+                    <button onclick="showTab('qa')" id="btn-qa" class="tab-btn flex-1 py-3 md:py-4 text-center text-xs md:text-base font-bold text-gray-400 border-b-2 border-transparent transition-all">Q&A</button>
+                    <button onclick="showTab('delivery')" id="btn-delivery" class="tab-btn flex-1 py-3 md:py-4 text-center text-xs md:text-base font-bold text-gray-400 border-b-2 border-transparent transition-all">배송/환불</button>
                 </div>
                 
                 <div class="tab-content-container bg-white rounded-b-3xl shadow-inner min-h-[100px] flex items-center justify-center overflow-hidden">
-                    <div id="default-msg" class="text-gray-300 py-20 font-medium">상단 버튼을 클릭하여 상세 정보를 확인하세요.</div>
+                    <div id="default-msg" class="text-gray-300 py-10 md:py-20 font-medium text-xs md:text-base">상단 버튼을 클릭하여 상세 정보를 확인하세요.</div>
                     
                     <div id="tab-info" class="hidden-content w-full">
                         <img src="images/상품상세정보공시.jpg" alt="상품정보공시" class="w-full h-auto mx-auto">
@@ -279,7 +285,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="text-center text-xs text-gray-400 leading-relaxed py-12 bg-gray-50">
+    <footer class="text-center text-[10px] md:text-xs text-gray-400 leading-relaxed py-12 bg-gray-50">
         제너럴바이오(주) | 전라북도 남원시 용투산로 254<br>
         글로벌 비콥(B Corp) 인증 기업 | 사회적 기업 인증<br>
         상담센터 : 02-555-6009 | 카카오톡 : 제너럴밸런스
@@ -287,26 +293,24 @@
 
     <!-- Fixed Bottom Bar -->
     <div class="fixed bottom-0 left-0 w-full z-50 flex h-24 shadow-[0_-15px_40px_rgba(0,0,0,0.15)]">
-        <!-- 1개월분 버튼 -->
         <a href="https://vcshop.gcoop.com/kr/nonMemberOrder?no=62&signature=d3766652f413ca2c646e5d948cb618c82720bb15146508fa7881d6b0b9d56ab6" 
            target="_blank" 
-           class="btn-1 w-1/2 flex flex-col items-center justify-center border-r border-gray-100 hover:bg-gray-50 transition-all px-4">
-            <span class="text-[10px] opacity-60 line-through mb-1">정상가 64,000원</span>
+           class="btn-1 w-1/2 flex flex-col items-center justify-center border-r border-gray-100 hover:bg-gray-50 transition-all px-2">
+            <span class="text-[9px] md:text-[10px] opacity-60 line-through mb-1">정상가 64,000원</span>
             <div class="text-center">
-                <p class="text-sm font-bold">구매하기 (1개월분)</p>
-                <p class="text-premium-brown font-black text-lg">할인가 49,000원</p>
-                <p class="text-[9px] text-red-500 mt-1 leading-tight">(50,000원 이하 택배비 2,500원 추가)</p>
+                <p class="text-[11px] md:text-sm font-bold">구매하기 (1개월분)</p>
+                <p class="text-premium-brown font-black text-sm md:text-lg">할인가 49,000원</p>
+                <p class="text-[8px] md:text-[9px] text-red-500 mt-0.5 leading-tight">(5만원 이하 택배비 추가)</p>
             </div>
         </a>
-        <!-- 2개월분 버튼 -->
         <a href="https://vcshop.gcoop.com/kr/nonMemberOrder?no=264&signature=68998267f43dfc4820ab10e994ae678dd972372551914bea7f12da257128598c" 
            target="_blank" 
-           class="btn-2 w-1/2 flex flex-col items-center justify-center hover:brightness-125 transition-all px-4">
-            <span class="text-[10px] opacity-70 line-through mb-1">정상가 128,000원</span>
+           class="btn-2 w-1/2 flex flex-col items-center justify-center hover:brightness-125 transition-all px-2">
+            <span class="text-[9px] md:text-[10px] opacity-70 line-through mb-1">정상가 128,000원</span>
             <div class="text-center">
-                <p class="text-sm font-bold text-white/80">구매하기 (2개월분)</p>
-                <p class="text-premium-gold font-black text-xl">할인가 98,000원</p>
-                <p class="text-[9px] text-premium-gold mt-1 font-bold">배송비 무료 + 추가 적립</p>
+                <p class="text-[11px] md:text-sm font-bold text-white/80">구매하기 (2개월분)</p>
+                <p class="text-premium-gold font-black text-sm md:text-xl">할인가 98,000원</p>
+                <p class="text-[8px] md:text-[9px] text-premium-gold mt-0.5 font-bold">배송비 무료</p>
             </div>
         </a>
     </div>
