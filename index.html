@@ -38,15 +38,24 @@
 </head>
 <body class="pb-32">
 
-    <!-- 1. Hero Section -->
-    <section class="relative h-screen flex items-center justify-center bg-cream overflow-hidden">
+    <!-- Header -->
+    <header class="fixed top-0 w-full bg-white/90 backdrop-blur-md z-40 py-4 px-6 border-b border-gray-100 flex justify-between items-center">
+        <div class="text-xl font-black tracking-tighter text-premium-brown">GCOOP THE ELIXIR</div>
+        <div class="space-x-4 text-sm font-medium text-gray-600">
+            <span>브랜드 스토리</span>
+            <span>제품 특징</span>
+        </div>
+    </header>
+
+    <!-- 1. Hero Section (Mobile Optimized) -->
+    <section class="relative min-h-screen flex items-center justify-center bg-cream overflow-hidden pt-32 pb-20 md:pt-0 md:pb-0">
         <div class="container mx-auto px-6 text-center z-10" data-aos="fade-up">
-            <p class="text-premium-gold font-bold tracking-widest mb-4">PREMIUM ENZYME ROUTINE</p>
-            <h1 class="text-5xl md:text-7xl font-black text-premium-brown leading-tight mb-8">
+            <p class="text-premium-gold font-bold tracking-widest mb-4 text-xs md:text-base">PREMIUM ENZYME ROUTINE</p>
+            <h1 class="text-3xl md:text-7xl font-black text-premium-brown leading-tight mb-8">
                 잘 먹는 것보다<br><span class="text-premium-gold">잘 소화하는 것이</span><br>진정한 실력입니다
             </h1>
             <div class="divider"></div>
-            <p class="text-lg text-gray-600 max-w-xl mx-auto mb-10">
+            <p class="text-base md:text-lg text-gray-600 max-w-xl mx-auto mb-10 px-4">
                 19년 연구의 결정체, 지쿱 디엘릭서 브라운 효소.<br>당신의 대사 스위치를 다시 켭니다.
             </p>
             <img src="images/ai-product-Style-B-1766769155762.jpg" alt="Hero" class="mx-auto rounded-3xl shadow-2xl max-w-md w-full">
@@ -289,7 +298,7 @@
                 <p class="text-[9px] text-red-500 mt-1 leading-tight">(50,000원 이하 택배비 2,500원 추가)</p>
             </div>
         </a>
-        <!-- 2개월분 버튼 (링크 업데이트 완료) -->
+        <!-- 2개월분 버튼 -->
         <a href="https://vcshop.gcoop.com/kr/nonMemberOrder?no=264&signature=68998267f43dfc4820ab10e994ae678dd972372551914bea7f12da257128598c" 
            target="_blank" 
            class="btn-2 w-1/2 flex flex-col items-center justify-center hover:brightness-125 transition-all px-4">
